@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./common.css">
+    <title>demo-腾讯扣叮首页</title>
+</head>
+
+<body class="bg-gray" style="min-width: 1300px;width:100%">
+
+    <header class="row bg-white">
+        <div class="col-2">
+            logo
+        </div>
+        <div class="col-8 menu">
+            <ul>
+                <li class="active">
+                    <a href="javascript:;">首页</a>
+                </li>
+                <li>实验室</li>
+                <li>课程</li>
+                <li>名师团</li>
+                <li>校园</li>
+                <li>社区</li>
+                <li>追梦营</li>
+                <li>CodingDay</li>
+            </ul>
+        </div>
+        <div class="col-2 row">
+            <div class="col-6 relative text-center">
+                <span class="btn">立即创作</span>
+                <div class="absolute btn-opt">
+                    <ul class="select shadow">
+                        <li>创意实验室</li>
+                        <li>创意实验室</li>
+                        <li>创意实验室</li>
+                        <li>创意实验室</li>
+                        <li>创意实验室</li>
+                        <li>创意实验室</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6 text-center">登录</div>
+        </div>
+    </header>
+
+    <div class="relative" id="slider">
+        <img style="width:100%;object-fit: cover;"
+            src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20220909_2huzgbj4onv.png" alt="">
+        <div class="absolute slider text-center">
+            <div class="next" onclick="handleLeft()">&lt;</div>
+            <div id="slider-opt" style="flex:1;display: flex;">
+                <div class="slider-item active" onclick="selectImg(0)">第四届追梦营</div>
+                <div class="slider-item" onclick="selectImg(1)">深圳创客节</div>
+                <div class="slider-item" onclick="selectImg(2)">虚拟机器人</div>
+                <div class="slider-item" onclick="selectImg(3)">人工智能活动</div>
+                <div class="slider-item" onclick="selectImg(4)">年度故事片</div>
+            </div>
+            <div class="next" onclick="handleRight()">&gt;</div>
+        </div>
+    </div>
+    <div class="shadow hot">
+        扣钉头条：2021第四届追梦营圆满落幕 <span
+            style="background-color: #EB676A;font-size:12px;color:#fff;padding:0 10px;border-radius: 20px 30px 30px 0">Hot</span>
+    </div>
+
+    <div id="part6" class="text-center">
+        <h1 style="margin-top: 50px">编程好工具，学习更轻松</h1>
+        <div style="margin-top:10px">选择适合你的编程神器</div>
+    </div>
+
+    <div class="bg-white" style="width:80%;margin: 30px auto;border-radius: 10px;min-width:1200px">
+        <div class="row">
+            <div class="col-3">
+
+
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+                <div class="row tool-card">
+                    <div>
+                        <div class="relative tool-item">
+                            <img src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200306_g9ofq50ftsdcreative.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div style="padding-left:20px">
+                        <div style="font-size:18px;padding-top:10px">创意实验室</div>
+                        <div style="font-size: 12px;margin-top:5px">6+岁 创造力 图形化</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9" style="padding:30px 50px;">
+                <div class="row" style="border-bottom: 1px solid #eee">
+                    <div class="col-8">
+                        <div>像搭积木一样编程创作</div>
+                        <h3 style="margin:20px 0">创意实验室</h3>
+                        <div>让学编程和搭积木一样简单，有效帮助孩子形成编程思维，锻炼逻辑思维，轻松制作有趣有料的编程项目，发挥自己的无限创意。</div>
+
+                        <div style="margin:50px 0">
+                            <span class="btn">立即创作</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        img
+                    </div>
+                </div>
+
+                <div>
+                    <div style="margin:30px 0">入门学习</div>
+                    <div class="row study">
+                        <div class="col-4 study-item">
+                            <div style="overflow: hidden ;width: 258px;height:140px">
+                                <img style="width: 258px;height:140px;object-fit: cover;"
+                                    src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200318_03b5pb9xb9xp.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 study-item">
+                            <div style="overflow: hidden ;width: 258px;height:140px">
+                                <img style="width: 258px;height:140px;object-fit: cover;"
+                                    src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200318_03b5pb9xb9xp.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-4 study-item">
+                            <div style="overflow: hidden ;width: 258px;height:140px">
+                                <img style="width: 258px;height:140px;object-fit: cover;"
+                                    src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200318_03b5pb9xb9xp.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="part7" class="text-center">
+        <h1 style="margin-top: 50px">趣味课程，名师名家带你学</h1>
+        <div style="margin-top:10px">学习丰富的权威认证课程 </div>
+    </div>
+
+    <div style="width:80%;margin: 30px auto;border-radius: 10px;">
+        <div class="row study">
+            <div class="col-3 relative study-item" style="padding:10px">
+                <div class="absolute" style="left:20px;top:20px;z-index: 111;">
+                    <span style="padding:2px 10px;background:#00ce9e;border-radius: 0 30px 30px 0;">简单</span>
+                </div>
+
+                <div style="overflow: hidden ;width: 100%;height:226px;">
+                    <img style="object-fit: cover;width: 100%;height:100%;"
+                        src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200925_ley7xak5xfl.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-3 relative study-item" style="padding:10px">
+                <div class="absolute" style="left:20px;top:20px;z-index: 111;">
+                    <span style="padding:2px 10px;background:#00ce9e;border-radius: 0 30px 30px 0;">简单</span>
+                </div>
+
+                <div style="overflow: hidden ;width: 100%;height:226px;">
+                    <img style="object-fit: cover;width: 100%;height:100%;"
+                        src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200925_ley7xak5xfl.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-3 relative study-item" style="padding:10px">
+                <div class="absolute" style="left:20px;top:20px;z-index: 111;">
+                    <span style="padding:2px 10px;background:#00ce9e;border-radius: 0 30px 30px 0;">简单</span>
+                </div>
+
+                <div style="overflow: hidden ;width: 100%;height:226px;">
+                    <img style="object-fit: cover;width: 100%;height:100%;"
+                        src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200925_ley7xak5xfl.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-3 relative study-item" style="padding:10px">
+                <div class="absolute" style="left:20px;top:20px;z-index: 111;">
+                    <span style="padding:2px 10px;background:#00ce9e;border-radius: 0 30px 30px 0;">简单</span>
+                </div>
+
+                <div style="overflow: hidden ;width: 100%;height:226px;">
+                    <img style="object-fit: cover;width: 100%;height:100%;"
+                        src="https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20200925_ley7xak5xfl.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtop shadow bg-white text-center">
+        <div onclick="scrollToPart('part6')">实验室</div>
+        <div onclick="scrollToPart('part7')">学好课</div>
+        <div onclick="javascript:document.documentElement.scrollTop = 0">回到顶部</div>
+    </div>
+
+    <footer class="bg-white">
+        <div style="padding:20px 0;width:80%;margin: 0 auto">
+            <div class="row">
+                <div class="col-3">
+                    logo
+                </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col-4">
+                            青少年编程
+                        </div>
+                        <div class="col-4">
+
+                        </div>
+                        <div class="col-4">
+                            友情链接
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top:20px">
+                        <div class="col-4">
+                            <div>实验室课程</div>
+                            <div>实验室课程</div>
+                            <div>实验室课程</div>
+                            <div>实验室课程</div>
+                            <div>实验室课程</div>
+                            <div>实验室课程</div>
+                        </div>
+                        <div class="col-4">
+                            CodingDay
+                        </div>
+                        <div class="col-4">
+                            <div>腾讯游戏追梦计划</div>
+                            <div>腾讯游戏追梦计划</div>
+                            <div>腾讯游戏追梦计划</div>
+                            <div>腾讯游戏追梦计划</div>
+                            <div>腾讯游戏追梦计划</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    logo
+                </div>
+            </div>
+            <div class="row" style="border-top: 1px solid #eee;margin-top:30px;padding:30px 0">
+                <div class="col-8">
+                    Copyright © 1998 - 2022 Tencent. All Rights Reserved. 腾讯公司 版权所有
+                </div>
+                <div class="col-4 text-right">
+                    <span>版权保护投诉指引</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function scrollToPart(id){
+            document.getElementById(id).scrollIntoView();
+        }
+
+        // 0 获取元素
+        let backtop = document.querySelector('.backtop')
+        // 一. 页面滚动事件
+        window.addEventListener('scroll', function () {
+            // 2. 页面检测滚动的距离
+            // console.log(document.documentElement.scrollTop)
+            let num = document.documentElement.scrollTop
+            // 3. 进行判断显示和隐藏
+            if (num >= 500) {
+                //显示那个元素
+                backtop.style.display = 'block'
+            } else {
+                // 否则隐藏元素
+                backtop.style.display = 'none'
+            }
+        })
+
+        //
+        let sliderList = [{
+            url: 'https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20220909_2huzgbj4onv.png',
+            name: ''
+        }, {
+            url: 'https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20221017_i1n62bthmuobanner.png',
+            name: ''
+        }, {
+            url: 'https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20220901_rz0z7qqh2gtgebanner.jpg',
+            name: ''
+        }, {
+            url: 'https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20220909_9e0choci7rg_20220909101245.jpg',
+            name: ''
+        }, {
+            url: 'https://wuji-30130.sz.gfp.tencent-cloud.com/pics/20211230_u9kh06gxj4a79e15a997c42203c515773168a900f9.jpg',
+            name: ''
+        }]
+        let current = 0;
+
+        // 自动轮播
+        setInterval(autoSlider, 5000);
+        function autoSlider() {
+            if (sliderList.length - 1 == current) {
+                selectImg(0);
+            } else {
+                selectImg(current + 1);
+            }
+        }
+        // 右切
+        function handleRight() {
+            if (sliderList.length - 1 == current) {
+                this.selectImg(0);
+            } else {
+                this.selectImg(current + 1);
+            }
+        }
+        // 左切
+        function handleLeft() {
+            if (0 == current) {
+                this.selectImg(sliderList.length - 1);
+            } else {
+                this.selectImg(current - 1);
+            }
+        }
+
+        // 轮播图设置
+        function selectImg(index) {
+            let imgDom = document.querySelector('#slider>img');
+            imgDom.src = sliderList[index].url;
+            let dom = document.getElementsByClassName('slider-item');
+            dom[index].classList.add("active");
+            if (current != index) {
+                dom[current].classList.remove("active");
+                current = index;
+            }
+        }
+    </script>
+</body>
+
+</html>
